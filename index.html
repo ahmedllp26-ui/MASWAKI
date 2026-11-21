@@ -205,10 +205,15 @@ async function checkout(){
    show("shop");
  }catch(e){alert("تعذر إرسال الطلب: "+e.message)}
 }
+let productPreviewUrls=[];
+function clearProductImagePreviews(){
+ productPreviewUrls.forEach(url=>URL.revokeObjectURL(url));productPreviewUrls=[];
+}
 function previewProductImages(){
  const box=document.getElementById("imagePreview"),files=Array.from(document.getElementById("pfile").files||[]);
+ clearProductImagePreviews();
  if(!files.length){box.innerHTML="<span>معاينة الصور ستظهر هنا</span>";return}
- box.innerHTML=files.map((file,i)=>'<div class="preview-item"><img src="'+URL.createObjectURL(file)+'" alt="صورة '+(i+1)+'"><small>'+file.name+'</small></div>').join("");
+ box.innerHTML=files.map((file,i)=>{const url=URL.createObjectURL(file);productPreviewUrls.push(url);return '<div class="preview-item"><img src="'+url+'" alt="صورة '+(i+1)+'"><small>'+file.name+'</small></div>'}).join("");
 }
 document.addEventListener("change",e=>{if(e.target&&e.target.id==="pfile")previewProductImages()});
 async function addProduct(){
@@ -257,7 +262,7 @@ function renderAdmin(){
  costN.textContent="—";profitN.textContent="—";
  document.getElementById("shipFee").value=shipping;
  document.getElementById("stockSummary").textContent="إجمالي القطع المتوفرة: "+products.reduce((s,p)=>s+Number(p.qty||0),0)+" قطعة.";
- document.getElementById("manage").innerHTML=products.map(p=>`<div class="manageRow"><div><b>${p.image?"🖼️":p.emoji||"📦"} ${p.name}</b><div class="small">${p.cat} · بيع ${money(p.sell)} · شراء ${money(p.buy)} · المخزون ${p.qty}</div></div><div class="actions"><button class="secondary" onclick="editPrice('${p.id}')">تعديل</button><button class="danger" onclick="deleteProduct('${p.id}')">حذف</button></div></div>`).join("")||"لا توجد منتجات";
+ document.getElementById("manage").innerHTML=products.map(p=>`<div class="manageRow"><div><b>${(p.images&&p.images.length)||p.image?"🖼️":p.emoji||"📦"} ${p.name}</b><div class="small">${p.cat} · بيع ${money(p.sell)} · شراء ${money(p.buy)} · المخزون ${p.qty}</div></div><div class="actions"><button class="secondary" onclick="editPrice('${p.id}')">تعديل</button><button class="danger" onclick="deleteProduct('${p.id}')">حذف</button></div></div>`).join("")||"لا توجد منتجات";
  document.getElementById("orderList").innerHTML=orders.map(o=>`<div class="orderrow"><div><b>طلب ${String(o.id).slice(-6)} — ${o.name}</b><div class="small">${o.phone} · ${o.province} · ${o.address}<br>${o.pay} · ${o.status}</div></div><div><b>${money(o.total)}</b><div class="small">مبيعات المنتجات: ${money(o.subtotal)}</div></div></div>`).join("")||'<div class="empty">لا توجد طلبات حتى الآن.</div>';
 }
 document.addEventListener("click",e=>{if(!e.target.closest(".sortWrap")){const m=document.getElementById("sortMenu");if(m)m.classList.remove("open");const t=document.getElementById("sortTrigger");if(t)t.setAttribute("aria-expanded","false")}});drawChips();renderProducts();count();
