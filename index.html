@@ -15,6 +15,57 @@
 #managerGate p{color:#71808c;font-size:13px;line-height:1.8}
 #managerGate input{width:100%;padding:13px;border:1px solid #e5eaf0;border-radius:12px;margin:10px 0 12px;text-align:center}
 #managerGate .loginError{min-height:20px;color:#b83e38;font-size:12px}
+
+/* MASWAKI redesign v1 — visual layer, preserving existing data and actions */
+:root{--bg:#f5f7fc;--card:#fff;--ink:#182238;--muted:#748097;--line:#e8ecf4;--brand:#344fc4;--brand2:#7188ed;--accent:#dce9ff;--good:#16845b;--shadow:0 10px 30px rgba(26,42,86,.07)}
+body{background:radial-gradient(ellipse at 85% -10%,#e9edff 0,transparent 34%),var(--bg);color:var(--ink)}
+.shell{max-width:1280px;padding:20px 24px 36px}
+.top{position:sticky;top:0;z-index:100;margin:-20px -24px 20px;padding:14px 24px;background:rgba(255,255,255,.9);backdrop-filter:blur(18px);border-bottom:1px solid rgba(226,232,244,.9);box-shadow:0 5px 24px rgba(28,43,83,.04)}
+.brand{font-size:22px;letter-spacing:.3px}.mark{border-radius:16px;background:linear-gradient(145deg,#243b9c,#7188ed);box-shadow:0 8px 20px #344fc433}
+.nav{gap:7px}.nav button{border-radius:12px;padding:10px 14px}
+.hero{position:relative;margin:24px 0 30px;padding:clamp(26px,5vw,52px);border-radius:30px;background:linear-gradient(120deg,#172755 0%,#304bb5 55%,#7188ed 100%);box-shadow:0 20px 45px rgba(37,61,145,.16)}
+.hero:after{content:"";position:absolute;width:280px;height:280px;border:1px solid #ffffff22;border-radius:50%;left:12%;top:-48%;box-shadow:0 0 0 35px #ffffff08,0 0 0 70px #ffffff06;pointer-events:none}
+.hero .orb{background:radial-gradient(circle at 32% 28%,#fff,#e2e8ff 30%,#a9b9ff 31%,#506bd1 72%);box-shadow:0 22px 55px #08164066}
+.head{margin:28px 0 16px}.head h2{font-size:21px;letter-spacing:-.2px}
+.chips{padding:5px 1px 16px;scrollbar-width:none}.chips::-webkit-scrollbar{display:none}
+.chip{border-radius:13px;padding:10px 15px;box-shadow:0 3px 12px #172b5508;transition:all .2s ease}.chip.active{background:#e9edff;border-color:#bdc9ff;box-shadow:0 4px 12px #344fc41a}
+.filters{align-items:center;gap:10px;margin-bottom:12px}.searchbox,.sortTrigger{border-radius:15px;min-height:48px}.searchbox:focus-within{border-color:#9cacef;box-shadow:0 0 0 4px #344fc414}
+.grid{grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
+.product,.panel,.stat{border-radius:21px;border-color:#e9edf5;box-shadow:0 7px 24px rgba(31,47,88,.055)}
+.product{overflow:hidden}.pic{height:190px;background:linear-gradient(145deg,#f0f3ff,#f8faff)}.pic img{transition:transform .35s ease}.product:hover .pic img{transform:scale(1.045)}
+.pbody{padding:16px}.pbody h3{font-size:15px;line-height:1.6}.price{font-size:19px}.pfoot button{border-radius:11px;padding:10px 13px}
+.heart{width:40px;height:40px;box-shadow:0 5px 15px #17212b18}
+#cart,#admin{animation:viewIn .25s ease-out}
+#cart>.head,#admin>.head{padding:16px 18px;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
+.panel{padding:21px;margin:17px 0}
+.stats{gap:14px}.stat{padding:20px;background:linear-gradient(150deg,#fff,#f9faff)}.stat b{font-size:23px;color:var(--brand)}
+.adminGrid{gap:17px}.adminGrid>.panel h3,.panel>h3{margin-top:2px;margin-bottom:17px}
+.field{border-radius:12px;border-color:#e2e7f0;padding:12px 13px;outline:none;transition:border .2s,box-shadow .2s}
+.field:focus{border-color:#9aabed;box-shadow:0 0 0 4px #344fc414}
+label{line-height:1.8}.formgrid{gap:13px}
+button{border-radius:12px;box-shadow:0 4px 12px #344fc41c;transition:transform .18s,box-shadow .18s,filter .18s}
+button:hover{filter:brightness(1.035);box-shadow:0 6px 16px #344fc426}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #8ea3f0;outline-offset:2px}
+button.secondary{box-shadow:none}button.danger{box-shadow:none}
+.manageRow,.orderrow,.cartrow{padding:15px 2px;gap:14px}.manageRow>div:first-child,.orderrow>div:first-child{min-width:0}
+#managerGate{background:radial-gradient(circle at 15% 15%,#7188ed 0,transparent 35%),linear-gradient(135deg,#14234e,#304bb5 68%,#7188ed)}
+#managerGate .loginCard{border:1px solid #ffffff80;border-radius:26px;padding:30px;box-shadow:0 28px 75px #08164066}
+#managerGate .loginMark{border-radius:20px}
+footer{padding:38px 10px}
+@media(max-width:750px){
+ .shell{padding:12px 13px 28px}.top{margin:-12px -13px 16px;padding:11px 13px;gap:10px}
+ .brand{font-size:19px}.mark{width:42px;height:42px}
+ .nav{width:100%;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+ .nav button{font-size:11px;padding:10px 4px;white-space:nowrap}
+ .hero{margin:16px 0 24px;padding:22px 18px;border-radius:23px;gap:10px}.hero .orb{width:92px;height:92px;font-size:43px}
+ .hero h1{font-size:27px}.hero p{font-size:12px;line-height:1.8}
+ .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.pic{height:132px}
+ .pbody{padding:11px}.pbody h3{font-size:13px}.price{font-size:15px}.pfoot{align-items:stretch;flex-direction:column}.pfoot button{width:100%}
+ .stats{gap:9px}.stat{padding:14px;border-radius:16px}.stat b{font-size:18px}
+ .panel{padding:15px;border-radius:17px}.sortWrap{min-width:132px}.searchbox{min-width:0}
+}
+@media(max-width:380px){.hero .orb{width:72px;height:72px;font-size:34px}.hero h1{font-size:23px}.nav button{font-size:10px}}
+
 </style></head>
 <body>
 <div id="managerGate" class="hidden">
