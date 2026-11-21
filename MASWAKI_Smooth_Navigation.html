@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#3157d5"><meta name="description" content="MASWAKI - متجر الإلكترونيات والإكسسوارات الذكية"><link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./icons/icon-192.png">
+<title>MASWAKI | مسواكي</title>
+<style>
+:root{--bg:#f4f6f8;--card:#fff;--ink:#17212b;--muted:#71808c;--line:#e5eaf0;--brand:#3157d5;--brand2:#738cf0;--accent:#dff36b;--good:#16845b;--warn:#a66b12;--shadow:0 12px 34px #15233b0c}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:16px}body{ -webkit-tap-highlight-color:transparent}button,.chip,.heart,.favbtn{transition:transform .18s ease,background-color .22s ease,color .22s ease,box-shadow .22s ease,opacity .22s ease}button:active,.chip:active,.heart:active{transform:scale(.96)}.product,.panel,.stat{transition:transform .24s ease,box-shadow .24s ease,border-color .24s ease}.product{animation:cardIn .38s both;will-change:transform}.product:nth-child(2){animation-delay:.035s}.product:nth-child(3){animation-delay:.07s}.product:nth-child(4){animation-delay:.105s}.product:nth-child(5){animation-delay:.14s}.product:nth-child(6){animation-delay:.175s}@keyframes cardIn{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}.view-enter{animation:viewIn .28s ease-out both}@keyframes viewIn{from{opacity:.72;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}@media(hover:hover){.product:hover{transform:translateY(-3px);box-shadow:0 12px 28px #17212b18}.nav button:hover{transform:translateY(-1px)}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,Arial,sans-serif}button,input,select,textarea{font:inherit}button{border:0;border-radius:12px;padding:11px 15px;background:var(--brand);color:#fff;font-weight:700;cursor:pointer}button.secondary{background:#edf1ff;color:var(--brand)}button.dark{background:#17212b}button.danger{background:#fff0ef;color:#b83e38}.shell{max-width:1200px;margin:auto;padding:18px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:24px;letter-spacing:.5px}.mark{width:46px;height:46px;border-radius:15px;background:linear-gradient(140deg,#233fbd,#8198ff);color:#fff;display:grid;place-items:center;font-size:23px;box-shadow:0 7px 18px #3157d533}.brand small{display:block;font-size:10px;letter-spacing:3px;color:var(--muted);margin-top:3px}.nav{display:flex;gap:8px;flex-wrap:wrap}.hero{margin:22px 0;border-radius:26px;padding:36px;background:linear-gradient(115deg,#172b66,#3157d5 65%,#7890f3);color:#fff;display:flex;justify-content:space-between;align-items:center;gap:20px;overflow:hidden}.hero h1{font-size:clamp(28px,5vw,48px);line-height:1.25;margin:13px 0}.hero p{color:#e2e8ff;line-height:1.9;margin:0 0 20px}.hero .tag{background:#ffffff20;border:1px solid #ffffff40;border-radius:30px;padding:7px 12px;font-size:12px}.hero .orb{width:190px;height:190px;flex-shrink:0;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#fff,#dce4ff 28%,#9eb0ff 29%,#4d6de0 70%);font-size:85px;box-shadow:0 18px 45px #0b174a55}.hero button{background:var(--accent);color:#202c55}.head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:24px 0 14px}.head h2{margin:0;font-size:22px}.muted{color:var(--muted);font-size:13px}.filters{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:15px}.filters input,.filters select,.field{border:1px solid var(--line);background:#fff;border-radius:11px;padding:11px;color:var(--ink)}.filters input{flex:1;min-width:180px}.chips{display:flex;gap:8px;overflow:auto;padding:3px 0 14px}.chip{white-space:nowrap;border-radius:30px;background:#fff;border:1px solid var(--line);color:#465363;padding:9px 14px;cursor:pointer}.chip.active{background:#e9edff;border-color:#b8c5ff;color:var(--brand);font-weight:700}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(205px,1fr));gap:15px}.product,.panel,.stat{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);overflow:hidden}.pic{height:170px;background:linear-gradient(135deg,#edf1ff,#f6f8fb);display:grid;place-items:center;font-size:65px;overflow:hidden}.pic img{width:100%;height:100%;object-fit:cover}.pbody{padding:14px}.pbody h3{font-size:16px;margin:0 0 7px}.price{color:var(--brand);font-size:19px;font-weight:900;margin:10px 0}.old{font-size:12px;color:#98a1ab;text-decoration:line-through;margin-right:7px}.pfoot{display:flex;align-items:center;justify-content:space-between;gap:8px}.badge{font-size:11px;background:#edf7f2;color:var(--good);padding:6px 9px;border-radius:30px}.panel{padding:18px;margin:16px 0}.hidden{display:none!important}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.stat{padding:16px}.stat b{display:block;font-size:22px;margin-top:9px}.adminGrid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.field{width:100%;margin-top:5px}label{font-size:12px;color:var(--muted)}.wide{grid-column:1/-1}.note{background:#fff8e4;color:#75571b;border:1px solid #f1dfac;padding:12px;border-radius:12px;font-size:12px;line-height:1.8;margin:12px 0}.cartrow,.orderrow,.manageRow{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}.cartrow:last-child,.orderrow:last-child,.manageRow:last-child{border:0}.empty{text-align:center;padding:28px;color:var(--muted)}table{border-collapse:collapse;width:100%;font-size:13px}td,th{text-align:right;padding:10px;border-bottom:1px solid var(--line)}.small{font-size:11px;color:var(--muted)}footer{text-align:center;color:var(--muted);font-size:12px;padding:30px}.file{font-size:12px}.actions{display:flex;gap:7px;flex-wrap:wrap}.favbar{display:flex;justify-content:flex-end;margin:4px 0 12px}.favbtn{background:#fff;color:#d83b62;border:1px solid #f1c7d2;padding:8px 12px}.favbtn.active{background:#fff0f4;border-color:#e99aae}.product{position:relative}.heart{position:absolute;top:10px;left:10px;z-index:2;width:38px;height:38px;padding:0;border-radius:50%;background:#ffffffed;color:#8a96a5;font-size:21px;box-shadow:0 3px 12px #17212b20}.heart.on{color:#e23865;background:#fff0f4}.heart:focus,.favbtn:focus{outline:2px solid #8ea2ff;outline-offset:2px}
+@media(max-width:750px){.shell{padding:12px}.hero{padding:24px}.hero .orb{width:115px;height:115px;font-size:52px}.stats{grid-template-columns:1fr 1fr}.adminGrid{grid-template-columns:1fr}.formgrid{grid-template-columns:1fr}.wide{grid-column:auto}.nav button{padding:9px 10px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pic{height:130px}.pfoot button{padding:9px;font-size:12px}}
+
+#managerGate{position:fixed;inset:0;z-index:9999;background:linear-gradient(135deg,#14265f,#3157d5 65%,#738cf0);display:grid;place-items:center;padding:18px}
+#managerGate .loginCard{width:min(100%,390px);background:#fff;border-radius:22px;padding:26px;box-shadow:0 20px 60px #07143b55;text-align:center}
+#managerGate .loginMark{width:62px;height:62px;margin:0 auto 12px;border-radius:18px;background:linear-gradient(140deg,#233fbd,#8198ff);color:#fff;display:grid;place-items:center;font-size:30px;font-weight:900}
+#managerGate h2{margin:8px 0;color:#17212b}
+#managerGate p{color:#71808c;font-size:13px;line-height:1.8}
+#managerGate input{width:100%;padding:13px;border:1px solid #e5eaf0;border-radius:12px;margin:10px 0 12px;text-align:center}
+#managerGate .loginError{min-height:20px;color:#b83e38;font-size:12px}
+</style></head>
+<body>
+<div id="managerGate" class="hidden">
+  <div class="loginCard">
+    <div class="loginMark">M</div>
+    <h2>دخول مدير MASWAKI</h2>
+    <p>هذه الصفحة مخصصة لصاحب المتجر فقط.<br>أدخل كلمة مرور الإدارة للمتابعة.</p>
+    <form onsubmit="managerLogin(event)">
+      <input id="managerEmail" type="email" placeholder="البريد الإلكتروني للمدير" autocomplete="username" required>
+      <input id="managerPassword" type="password" placeholder="كلمة مرور المدير" autocomplete="current-password" required>
+      <button type="submit" style="width:100%">دخول لوحة الإدارة</button>
+    </form>
+    <div id="managerLoginError" class="loginError"></div>
+    <button class="secondary" onclick="cancelManagerLogin()" style="width:100%;margin-top:5px">العودة للمتجر</button>
+  </div>
+</div>
+<div class="shell">
+<header class="top"><div class="brand"><div class="mark">M</div><div>MASWAKI<small>مسواكي • SMART SHOPPING</small></div></div><div class="nav"><button class="secondary" onclick="show('shop')">المتجر</button><button class="secondary" onclick="show('cart')">السلة (<span id="count">0</span>)</button><button class="secondary" onclick="showFavorites()">المفضلة (<span id="favCount">0</span>)</button><button onclick="show('admin')">لوحة الإدارة</button></div></header>
+<main id="shop">
+<section class="hero"><div><span class="tag">إلكترونيات وإكسسوارات ذكية</span><h1>كل احتياجاتك التقنية<br>في مكان واحد</h1><p>سماعات، شواحن، هواتف، كفرات والمزيد.<br>تسوّق بسهولة والتوصيل بسعر موحد إلى جميع محافظات العراق.</p><button onclick="document.getElementById('catalog').scrollIntoView({behavior:'smooth'})">اكتشف المنتجات ←</button></div><div class="orb">🎧</div></section>
+<div class="head"><h2 id="catalog">تسوّق حسب القسم</h2><span class="muted" id="resultCount"></span></div><div class="chips" id="chips"></div>
+<div class="filters"><input id="search" placeholder="ابحث عن هاتف أو سماعة أو شاحن..." oninput="renderProducts()"><select id="sort" onchange="renderProducts()"><option value="new">الأحدث</option><option value="low">السعر: الأقل أولاً</option><option value="high">السعر: الأعلى أولاً</option></select></div>
+<div class="favbar"><button id="favFilter" class="favbtn" onclick="toggleFavoriteView()">♡ عرض المفضلة فقط</button></div><div class="grid" id="products"></div></main>
+<section id="cart" class="hidden"><div class="head"><h2>سلة المشتريات</h2><button class="secondary" onclick="show('shop')">متابعة التسوق</button></div><div class="panel" id="cartContent"></div><div class="panel"><h3>بيانات التوصيل وتأكيد الطلب</h3><div class="formgrid"><label>الاسم الكامل<input class="field" id="buyer" placeholder="اسم الزبون"></label><label>رقم الهاتف<input class="field" id="phone" placeholder="07xxxxxxxxx"></label><label>المحافظة<select class="field" id="province"><option>بغداد</option><option>البصرة</option><option>نينوى</option><option>أربيل</option><option>النجف</option><option>كربلاء</option><option>ذي قار</option><option>الأنبار</option><option>ديالى</option><option>السليمانية</option><option>واسط</option><option>ميسان</option><option>المثنى</option><option>القادسية</option><option>صلاح الدين</option><option>كركوك</option><option>دهوك</option></select></label><label>العنوان بالتفصيل<input class="field" id="address" placeholder="المنطقة، الشارع، أقرب نقطة دالة"></label><label class="wide">طريقة الدفع<select class="field" id="pay"><option>الدفع عند الاستلام</option><option>الدفع الإلكتروني (يتطلب تفعيل بوابة دفع)</option></select></label></div><div class="note">أجور التوصيل الموحدة: <b id="shipLabel">تُحدد من لوحة الإدارة</b>. الدفع الإلكتروني لن يعمل فعلياً إلا بعد ربط بوابة دفع معتمدة.</div><div class="head"><b id="grandTotal">المجموع: 0 د.ع</b><button onclick="checkout()">إرسال الطلب</button></div></div></section>
+<section id="admin" class="hidden"><div class="head"><h2>لوحة إدارة MASWAKI</h2><button class="secondary" onclick="show('shop')">العودة للمتجر</button></div><div class="note">المتجر متصل بـ Firebase. تسجيل دخول المدير والمنتجات والطلبات تُدار عبر قاعدة البيانات السحابية.</div>
+<div class="stats"><div class="stat">الطلبات<b id="ordersN">0</b></div><div class="stat">إجمالي المبيعات<b id="salesN">0</b></div><div class="stat">تكلفة البضاعة المباعة<b id="costN">0</b></div><div class="stat">الربح الإجمالي التقديري<b id="profitN">0</b></div></div>
+<div class="adminGrid"><div class="panel"><h3>إضافة منتج</h3><div class="formgrid"><label class="wide">اسم المنتج<input class="field" id="pn" placeholder="مثال: سماعة لاسلكية"></label><label>القسم<select class="field" id="pc"></select></label><label>سعر البيع (د.ع)<input class="field" id="ps" type="number" min="0"></label><label>سعر الشراء (د.ع)<input class="field" id="pb" type="number" min="0"></label><label>الكمية<input class="field" id="pq" type="number" min="0" value="1"></label><label>السعر قبل الخصم<input class="field" id="po" type="number" min="0"></label><label class="wide">رابط صورة المنتج أو ارفع صورة<input class="field" id="purl" placeholder="https://..."><input class="field file" id="pfile" type="file" accept="image/*"></label><button class="wide" onclick="addProduct()">حفظ المنتج في المتجر</button></div></div>
+<div class="panel"><h3>إعدادات التوصيل</h3><label>سعر موحد لجميع محافظات العراق (د.ع)<input class="field" id="shipFee" type="number" min="0"></label><button style="margin-top:10px" onclick="saveShipping()">حفظ أجور التوصيل</button><hr style="border:0;border-top:1px solid var(--line);margin:18px 0"><h3>ملخص المخزون</h3><div id="stockSummary" class="muted"></div></div></div>
+<div class="panel"><div class="head"><h3>إدارة المنتجات والأسعار</h3><span class="muted">سعر البيع والشراء والمخزون</span></div><div id="manage"></div></div>
+<div class="panel"><h3>الطلبات والمبيعات</h3><div id="orderList"></div></div>
+</section><footer>MASWAKI • مسواكي — متجر الإلكترونيات والإكسسوارات الذكية</footer></div>
+
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+<script>
+
+const firebaseConfig = {
+  apiKey: "AIzaSyABUZ45f2vk8uZS3OiuIBPDNMwogQaypnk",
+  authDomain: "maswaki-23b1f.firebaseapp.com",
+  projectId: "maswaki-23b1f",
+  storageBucket: "maswaki-23b1f.firebasestorage.app",
+  messagingSenderId: "949112406808",
+  appId: "1:949112406808:web:0169a16517136b197e546d",
+  measurementId: "G-LFMJJBRMQD"
+};
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+const db = firebase.firestore();
+let currentUser = null;
+let cloudReady = false;
+
+const cats=["الكل","سماعات وإيربودز","شواحن","هواتف","كفرات وحمايات","كيبلات","باور بانك","إكسسوارات أخرى"];
+const seed=[{id:1,name:"سماعة لاسلكية Pro",cat:cats[1],sell:35000,buy:22000,qty:8,old:42000,emoji:"🎧"},{id:2,name:"شاحن سريع USB‑C",cat:cats[2],sell:18000,buy:11000,qty:15,old:0,emoji:"🔌"},{id:3,name:"هاتف ذكي",cat:cats[3],sell:325000,buy:290000,qty:3,old:0,emoji:"📱"},{id:4,name:"كفر حماية شفاف",cat:cats[4],sell:9000,buy:3500,qty:24,old:12000,emoji:"📲"},{id:5,name:"كيبل Type‑C",cat:cats[5],sell:7000,buy:2500,qty:30,old:0,emoji:"🔋"},{id:6,name:"باور بانك 20000mAh",cat:cats[6],sell:42000,buy:30000,qty:6,old:48000,emoji:"🔋"}];
+let products=[],cart=JSON.parse(localStorage.getItem("mas_cart")||"[]"),favorites=JSON.parse(localStorage.getItem("mas_favorites")||"[]"),favoritesOnly=false,orders=[],shipping=5000,active="الكل";
+const money=n=>Number(n||0).toLocaleString("en-US")+" د.ع",save=()=>{localStorage.setItem("mas_cart",JSON.stringify(cart))};
+let managerUnlocked=false;
+function show(id){
+  if(id==="admin"&&!managerUnlocked){
+    document.getElementById("managerGate").classList.remove("hidden");
+    document.getElementById("managerPassword").value="";
+    document.getElementById("managerLoginError").textContent="";
+    return;
+  }
+  document.getElementById("managerGate").classList.add("hidden");
+  ["shop","cart","admin"].forEach(x=>{const el=document.getElementById(x);el.classList.toggle("hidden",x!==id);if(x===id){el.classList.remove("view-enter");void el.offsetWidth;el.classList.add("view-enter");}});
+  if(id==="cart")renderCart();if(id==="admin")renderAdmin();window.scrollTo({top:0,behavior:"smooth"})
+}
+async function managerLogin(event){
+  event.preventDefault();
+  const email=document.getElementById("managerEmail").value.trim();
+  const password=document.getElementById("managerPassword").value;
+  const error=document.getElementById("managerLoginError");
+  error.textContent="جارٍ التحقق من الحساب...";
+  try {
+    const cred=await auth.signInWithEmailAndPassword(email,password);
+    const adminDoc=await db.collection("admin").doc(cred.user.uid).get();
+    if(!adminDoc.exists || adminDoc.data().role!=="admin"){
+      await auth.signOut();
+      throw new Error("هذا الحساب ليس لديه صلاحية مدير في MASWAKI.");
+    }
+    currentUser=cred.user;
+    managerUnlocked=true;
+    document.getElementById("managerGate").classList.add("hidden");
+    await loadCloudData();
+    show("admin");
+  } catch(e) {
+    error.textContent=e.code==="auth/invalid-credential"?"البريد الإلكتروني أو كلمة المرور غير صحيحة.":(e.message||"تعذر تسجيل الدخول.");
+  }
+}
+function cancelManagerLogin(){
+  document.getElementById("managerGate").classList.add("hidden");
+  show("shop");
+}
+function drawChips(){document.getElementById("chips").innerHTML=cats.map(c=>`<button class="chip ${active===c?'active':''}" onclick="active='${c}';drawChips();renderProducts()">${c}</button>`).join("");document.getElementById("pc").innerHTML=cats.slice(1).map(c=>`<option>${c}</option>`).join("")}
+function renderProducts(){let q=document.getElementById("search").value.toLowerCase(),sort=document.getElementById("sort").value,a=products.filter(p=>(active==="الكل"||p.cat===active)&&p.name.toLowerCase().includes(q)&&(!favoritesOnly||favorites.includes(String(p.id))));if(sort==="low")a.sort((x,y)=>x.sell-y.sell);if(sort==="high")a.sort((x,y)=>y.sell-x.sell);document.getElementById("resultCount").textContent=a.length+" منتج";document.getElementById("products").innerHTML=a.map(p=>`<article class="product"><button class="heart ${favorites.includes(String(p.id))?"on":""}" aria-label="${favorites.includes(String(p.id))?"إزالة من المفضلة":"إضافة إلى المفضلة"}" title="${favorites.includes(String(p.id))?"إزالة من المفضلة":"إضافة إلى المفضلة"}" onclick="toggleFavorite('${p.id}')">${favorites.includes(String(p.id))?"♥":"♡"}</button><div class="pic">${p.image?`<img src="${p.image}" alt="${p.name}">`:p.emoji||"📦"}</div><div class="pbody"><h3>${p.name}</h3><div class="muted">${p.cat}</div><div class="price">${money(p.sell)} ${p.old?`<span class="old">${money(p.old)}</span>`:""}</div><div class="pfoot"><span class="badge">${p.qty>0?"متوفر":"نفد المخزون"}</span><button ${p.qty<1?"disabled":""} onclick="addCart('${p.id}')">أضف للسلة</button></div></div></article>`).join("")||'<div class="empty">'+(favoritesOnly?'لا توجد منتجات في المفضلة بعد. اضغط ♡ على أي منتج لحفظه.':'لا توجد منتجات في هذا القسم حالياً.')+'</div>';document.getElementById("favCount").textContent=favorites.length;document.getElementById("favFilter").classList.toggle("active",favoritesOnly);document.getElementById("favFilter").textContent=favoritesOnly?"♥ عرض كل المنتجات":"♡ عرض المفضلة فقط"} 
+function toggleFavorite(id){id=String(id);favorites=favorites.includes(id)?favorites.filter(x=>x!==id):[...favorites,id];localStorage.setItem("mas_favorites",JSON.stringify(favorites));renderProducts()}
+function toggleFavoriteView(){favoritesOnly=!favoritesOnly;renderProducts()}
+function showFavorites(){show("shop");favoritesOnly=true;renderProducts() }
+function addCart(id){let p=products.find(x=>x.id===id),x=cart.find(x=>x.id===id);if(!p||p.qty<1)return alert("المنتج غير متوفر");if(x&&x.qty>=p.qty)return alert("الكمية المتوفرة غير كافية");x?x.qty++:cart.push({id:String(id),qty:1});save();count();alert("أُضيف المنتج إلى السلة")}
+function count(){document.getElementById("count").textContent=cart.reduce((s,x)=>s+x.qty,0)}
+function renderCart(){let sub=0;document.getElementById("cartContent").innerHTML=cart.length?cart.map(x=>{let p=products.find(y=>y.id===x.id);if(!p)return"";sub+=p.sell*x.qty;return `<div class="cartrow"><div><b>${p.name}</b><div class="muted">${money(p.sell)} × ${x.qty}</div></div><div class="actions"><button class="secondary" onclick="changeQty('${p.id}',-1)">−</button><button class="secondary" onclick="changeQty('${p.id}',1)">+</button><button class="danger" onclick="removeItem('${p.id}')">حذف</button></div></div>`}).join(""):'<div class="empty">السلة فارغة. أضف منتجات للمتابعة.</div>';document.getElementById("shipLabel").textContent=money(shipping);document.getElementById("grandTotal").textContent="الإجمالي مع التوصيل: "+money(sub+(cart.length?shipping:0))}
+function changeQty(id,d){let x=cart.find(x=>x.id===id),p=products.find(x=>x.id===id);if(!x)return;if(d>0&&x.qty>=p.qty)return alert("لا توجد كمية إضافية");x.qty+=d;if(x.qty<=0)cart=cart.filter(y=>y.id!==id);save();count();renderCart()}
+function removeItem(id){cart=cart.filter(x=>x.id!==id);save();count();renderCart()}
+async function checkout(){
+ if(!cart.length)return alert("السلة فارغة");
+ let name=document.getElementById("buyer").value.trim(),ph=document.getElementById("phone").value.trim(),addr=document.getElementById("address").value.trim();
+ if(!name||!ph||!addr)return alert("أكمل الاسم ورقم الهاتف والعنوان");
+ for(let x of cart){let p=products.find(y=>y.id===x.id);if(!p||p.qty<x.qty)return alert("الكمية غير كافية للمنتج: "+(p?.name||""))}
+ let subtotal=cart.reduce((s,x)=>s+products.find(p=>p.id===x.id).sell*x.qty,0);
+ let items=cart.map(x=>{let p=products.find(y=>y.id===x.id);return {productId:String(p.id),name:p.name,price:Number(p.sell),quantity:Number(x.qty)}});
+ let order={name,phone:ph,province:document.getElementById("province").value,address:addr,pay:document.getElementById("pay").value,items,subtotal,shipping,total:subtotal+shipping,status:"جديد",createdAt:firebase.firestore.FieldValue.serverTimestamp()};
+ try{
+   await db.collection("orders").add(order);
+   cart=[];save();count();renderCart();
+   alert("تم إرسال طلبك بنجاح إلى متجر MASWAKI");
+   show("shop");
+ }catch(e){alert("تعذر إرسال الطلب: "+e.message)}
+}
+async function addProduct(){
+ if(!currentUser)return alert("سجّل دخول المدير أولاً");
+ let name=document.getElementById("pn").value.trim(),sell=Number(document.getElementById("ps").value),buy=Number(document.getElementById("pb").value),qty=Number(document.getElementById("pq").value);
+ if(!name||sell<=0||buy<0||qty<0)return alert("أدخل بيانات صحيحة");
+ let image=document.getElementById("purl").value.trim();
+ try{
+   await db.collection("products").add({name,cat:document.getElementById("pc").value,sell,buy,qty,old:Number(document.getElementById("po").value)||0,image,emoji:"📦",createdAt:firebase.firestore.FieldValue.serverTimestamp()});
+   await loadProducts();renderProducts();renderAdmin();alert("تم حفظ المنتج على Firebase");
+ }catch(e){alert("تعذر حفظ المنتج: "+e.message)}
+}
+async function saveShipping(){shipping=Math.max(0,Number(document.getElementById("shipFee").value)||0);try{await db.collection("settings").doc("store").set({shipping},{merge:true});alert("تم حفظ أجور التوصيل");}catch(e){alert("تعذر الحفظ: "+e.message)}}
+async function deleteProduct(id){if(!confirm("حذف المنتج؟"))return;try{await db.collection("products").doc(String(id)).delete();await loadProducts();renderAdmin();renderProducts()}catch(e){alert("تعذر الحذف: "+e.message)}}
+async function editPrice(id){let p=products.find(x=>x.id===id),s=prompt("سعر البيع بالدينار العراقي",p.sell),b=prompt("سعر الشراء بالدينار العراقي",p.buy),q=prompt("الكمية المتوفرة",p.qty);if(s===null||b===null||q===null)return;if(Number(s)<=0||Number(b)<0||Number(q)<0)return alert("قيم غير صحيحة");try{await db.collection("products").doc(String(id)).update({sell:Number(s),buy:Number(b),qty:Number(q)});await loadProducts();renderAdmin();renderProducts()}catch(e){alert("تعذر التعديل: "+e.message)}}
+async function loadProducts(){
+ const snap=await db.collection("products").get();
+ products=snap.docs.map(d=>({id:d.id,...d.data()}));
+ renderProducts();
+}
+async function loadCloudData(){
+ await loadProducts();
+ const setDoc=await db.collection("settings").doc("store").get();
+ shipping=setDoc.exists?Number(setDoc.data().shipping||0):5000;
+ const orderSnap=await db.collection("orders").orderBy("createdAt","desc").get();
+ orders=orderSnap.docs.map(d=>({id:d.id,...d.data()}));
+ renderAdmin();
+}
+function renderAdmin(){
+ let sales=orders.reduce((s,o)=>s+Number(o.subtotal||0),0);
+ ordersN.textContent=orders.length;salesN.textContent=money(sales);
+ costN.textContent="—";profitN.textContent="—";
+ document.getElementById("shipFee").value=shipping;
+ document.getElementById("stockSummary").textContent="إجمالي القطع المتوفرة: "+products.reduce((s,p)=>s+Number(p.qty||0),0)+" قطعة.";
+ document.getElementById("manage").innerHTML=products.map(p=>`<div class="manageRow"><div><b>${p.image?"🖼️":p.emoji||"📦"} ${p.name}</b><div class="small">${p.cat} · بيع ${money(p.sell)} · شراء ${money(p.buy)} · المخزون ${p.qty}</div></div><div class="actions"><button class="secondary" onclick="editPrice('${p.id}')">تعديل</button><button class="danger" onclick="deleteProduct('${p.id}')">حذف</button></div></div>`).join("")||"لا توجد منتجات";
+ document.getElementById("orderList").innerHTML=orders.map(o=>`<div class="orderrow"><div><b>طلب ${String(o.id).slice(-6)} — ${o.name}</b><div class="small">${o.phone} · ${o.province} · ${o.address}<br>${o.pay} · ${o.status}</div></div><div><b>${money(o.total)}</b><div class="small">مبيعات المنتجات: ${money(o.subtotal)}</div></div></div>`).join("")||'<div class="empty">لا توجد طلبات حتى الآن.</div>';
+}
+drawChips();renderProducts();count();
+auth.onAuthStateChanged(async user=>{
+ currentUser=user;
+ if(user){
+   try{
+     const a=await db.collection("admin").doc(user.uid).get();
+     if(a.exists&&a.data().role==="admin"){managerUnlocked=true;await loadCloudData();}
+     else {managerUnlocked=false;}
+   }catch(e){console.warn(e);}
+ }
+});
+loadProducts().catch(e=>console.warn("Firebase products:",e));
+window.show=show;window.managerLogin=managerLogin;window.cancelManagerLogin=cancelManagerLogin;
+window.renderProducts=renderProducts;window.toggleFavorite=toggleFavorite;window.toggleFavoriteView=toggleFavoriteView;window.showFavorites=showFavorites;window.addCart=addCart;window.changeQty=changeQty;window.removeItem=removeItem;
+window.checkout=checkout;window.addProduct=addProduct;window.saveShipping=saveShipping;window.deleteProduct=deleteProduct;window.editPrice=editPrice;
+</script><script>if ("serviceWorker" in navigator) {window.addEventListener("load", () => {navigator.serviceWorker.register("./service-worker.js").catch(err => console.warn("SW:", err));});}</script></body></html>
