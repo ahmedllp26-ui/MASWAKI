@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#3157d5"><meta name="description" content="MASWAKI - متجر الإلكترونيات والإكسسوارات الذكية"><link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./icons/icon-192.png">
 <title>MASWAKI | مسواكي</title>
 <style>
 :root{--bg:#f4f6f8;--card:#fff;--ink:#17212b;--muted:#71808c;--line:#e5eaf0;--brand:#3157d5;--brand2:#738cf0;--accent:#dff36b;--good:#16845b;--warn:#a66b12;--shadow:0 12px 34px #15233b0c}
@@ -181,4 +181,4 @@ loadProducts().catch(e=>console.warn("Firebase products:",e));
 window.show=show;window.managerLogin=managerLogin;window.cancelManagerLogin=cancelManagerLogin;
 window.renderProducts=renderProducts;window.addCart=addCart;window.changeQty=changeQty;window.removeItem=removeItem;
 window.checkout=checkout;window.addProduct=addProduct;window.saveShipping=saveShipping;window.deleteProduct=deleteProduct;window.editPrice=editPrice;
-</script></body></html>
+</script><script>if ("serviceWorker" in navigator) {window.addEventListener("load", () => {navigator.serviceWorker.register("./service-worker.js").catch(err => console.warn("SW:", err));});}</script></body></html>
